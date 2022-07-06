@@ -29,7 +29,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -585,7 +584,7 @@ body {
 
 .current::after {
   position: relative;
-  bottom: -34px;
+  bottom: -31px;
   right: 0;
   display: block;
   content: "";
@@ -753,6 +752,11 @@ body {
   text-align: center;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
+}
 
 .benefits__text {
   line-height: 1.71;
@@ -793,7 +797,7 @@ body {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .cards__item {
@@ -1059,7 +1063,7 @@ body {
 }
 
 .filter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -1068,6 +1072,12 @@ body {
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -1106,6 +1116,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1120,7 +1131,9 @@ body {
 }
 
 .catalog__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms var(--cubic);
 }
 .catalog__link:hover, .catalog__link:focus {
@@ -1152,6 +1165,7 @@ body {
 }
 
 .catalog__text-box {
+  flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
