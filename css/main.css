@@ -1105,6 +1105,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   text-align: center;
   color: var(--black-color);
   background-color: var(--btngrey-color);
